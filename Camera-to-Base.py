@@ -24,7 +24,8 @@ def main(points , tx , ty , tz, theta_deg):
         y_base = y + ty
         z_base = -x * sin_t + z * cos_t + tz
 
-       
+        # Rounding
+        transformed_point = [round(x_base, 2), round(y_base, 2), round(z_base, 2)]
 
         print(f"Obstacle {idx}: {transformed_point}")
 
